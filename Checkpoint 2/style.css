@@ -1,0 +1,89 @@
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    display: flex;
+    gap: 100px;
+}
+
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.section1 {
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 100px;
+    border-radius: 16px;    
+}
+
+p {
+    line-height: 30px;
+    font-family: inherit;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+div {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 30px;
+    border-radius: 16px;
+    color: rgb(0, 0, 0);    
+    border: none;
+    cursor: pointer;
+}
+
+.soma {
+    background-color: rgb(91, 158, 175);
+    
+}
+
+.soma:hover {
+    background-color: rgb(27, 84, 122);
+    color: white;
+}
+
+.retira {
+    background-color: rgb(187, 100, 100);    
+}
+
+.retira:hover {
+    background-color: rgb(77, 14, 14);
+    color: white;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-top: 250px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: 5rem;
+}
+

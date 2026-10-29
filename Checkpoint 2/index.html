@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Placar Interativo</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <section class="section1">  
+            <h2>Time A</h2>
+            <p id="placar">0</p>
+            
+            <div>
+                <button class="soma" onclick="somarPonto()">Adicionar Ponto</button>
+                <button class="retira"  onclick="retirarPonto()">Retirar Ponto</button>
+            </div>
+
+        </section>
+
+        <h1>X</h1>
+
+        <section class="section1">  
+            <h2>Time B</h2>
+            <p id="placar2">0</p>
+
+            <div>               
+                <button class="soma" onclick="somarPonto2()">Adicionar Ponto</button>
+                <button class="retira"  onclick="retirarPonto2()">Retirar Ponto</button>
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>
