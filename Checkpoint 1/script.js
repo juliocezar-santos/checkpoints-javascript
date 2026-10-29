@@ -1,9 +1,11 @@
 function calcular() {
-    let n1 = Number(document.getElementById('preco').value);
-    let n2 = Number(document.getElementById('quantidade').value);
+    let preco = Number(document.getElementById('preco').value);
+    let quantidade = Number(document.getElementById('quantidade').value);
 
-    let resultado = n1 * n2;
+    let resultado = preco * quantidade;
 
-    document.getElementById('resultado').innerText = 'Valor final: R$' + resultado
+    let resultadoFormatado = resultado.toFixed(2).replace(".", ",");
+
+    document.getElementById('resultado').innerText = 'Total da compra: R$ ' + resultadoFormatado;
 
 }

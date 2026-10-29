@@ -1,23 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Compras</title>
     <script src="script.js" defer></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-    <div>
-        <h1>Calcule o preço da sua compra</h1>
-        <input type="number"  id="preco" placeholder="Digite o preço unitário ">
-        <input type="number" id="quantidade" placeholder="Digite a quantidade ">
+    <main>
 
-        <button onclick="calcular()">Calcular</button>
+        
+        <h1>Calcule o preço da sua compra:</h1>
+        
 
-        <p id="resultado"></p>
-    </div>
+        <div class="campo">
+            <label for="preco">Preço Unitário R$</label>
+            <input type="number" step="0.01"  id="preco" placeholder="Digite o preço unitário ">
+        </div>
+        <div class="campo">
+            <label for="quantidade">Quantidade </label>
+            <input type="number" id="quantidade" placeholder="Digite a quantidade ">
+        </div>
+
+        <div class="botao">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <div class="results">
+            <p id="resultado"></p>
+        </div>
+    </main>
     
 </body>
 </html>
